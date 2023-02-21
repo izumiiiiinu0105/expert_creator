@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <!-- OGP-->
+    <meta property="og:title" content="サイト名を記載する" /><!-- サイト名を記載する-->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="リンクを記載する" /><!-- リンクを記載する-->
+    <meta property="og:image" content="OGP画像を記載する" /><!-- OGP画像を記載する-->
+    <meta property="og:site_name"  content="サイト名を記載する" /><!-- サイト名を記載する-->
+    <meta property="og:description" content="サイト詳細を記載する" /><!-- サイト詳細を記載する-->
+    <meta property="fb:app_id" content="999278714085665" />
+    <title>FinT エキスパートクリエイターLP</title><!-- サイト詳細を記載する-->
+    <style>
+        .float-button__wrap {
+            position: fixed;
+            z-index: 20;
+            bottom: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: block;
+            width: auto;
+            min-width: 350px;
+            opacity: 1;
+        }
+        img {
+            width:auto;
+            max-width: 100%;
+            min-width: 50%;
+            height: auto;
+            min-height: 60px;
+        }
+        iframe[src^="https://docs.google.com/forms/d/e"]{
+            width:100%;
+        } 
+    </style>
+    <!-- Google Tag Manager -->
+
+    <!-- Microsoft Clarity-->
+
+    <!-- googleアナリティクス-->
+
+    <!-- ボタン押下時の動作-->
+    <script>
+        $('#page-link a[href*="#"]').click(function () {
+        var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+        var pos = $(elmHash).offset().top;  //idの上部の距離を取得
+        $('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
+        return false;
+        });
+    </script>
+    </script>
+</head>
+<body>
+    <!--フローティングボタン-->
+    <div id="button" class="float-button__wrap" >
+        <img alt="ボタン画像" src="btn.png"></a>
+    </div>
+    <div style="text-align: center" >
+        <a href="https://fint.co.jp/"><!-- FinTの会社URLを記載する-->
+            <img alt="ヘッダー画像" src="lp-ヘッダー.png"><!-- ヘッダー画像を記載する-->
+        </a>
+        <p>
+            <img alt="画像1" src="FinT-lp.png">
+        </p>
+        <p>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdWbAIAAKPab6ZPjM7DyhusvyNrF3xtnrhAz71STkxKjHwm7Q/viewform?embedded=true" width="640" height="1491" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </p>
+        <p>
+            <img alt="ヘッダー画像" src="lp-フッター.png"><!-- フッダー画像を記載する-->
+        </p>
+    </div> 
+</body>
+</html>
