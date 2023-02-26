@@ -43,18 +43,19 @@
 
     <!-- ボタン押下時の動作-->
     <script>
-        $('#page-link a[href*="#"]').click(function () {
-        var elmHash = $(this).attr('href'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
+        $('#page-link a[href*="#iframe"]').click(function () {
+        var elmHash = $(this).attr('#iframe'); //ページ内リンクのHTMLタグhrefから、リンクされているエリアidの値を取得
         var pos = $(elmHash).offset().top;  //idの上部の距離を取得
         $('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
         return false;
         });
     </script>
-    </script>
+    
 </head>
 <body>
     <!--フローティングボタン-->
     <div id="button" class="float-button__wrap" >
+        <a href="https://forms.gle/kRnC3ExUWFZAKVg56" target="_blank" rel="noopener noreferrer">
         <img alt="ボタン画像" src="btn.png"></a>
     </div>
     <div style="text-align: center" >
